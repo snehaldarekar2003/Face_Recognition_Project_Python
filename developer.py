@@ -42,15 +42,15 @@ class Developer:
         # Create buttons below the section 
         # ------------------------------------------------------------------------------------------------------------------- 
         # # student button 1
-        # std_img_btn=Image.open(r"C:\Users\user\Documents\Python_Test_Projects\Images_GUI\m1.png")
-        # std_img_btn=std_img_btn.resize((180,180),Image.Resampling.LANCZOS)
-        # self.std_img1=ImageTk.PhotoImage(std_img_btn)
+        std_img_btn=Image.open(r"C:\Users\user\Documents\Python_Test_Projects\Images_GUI\m1.png")
+        std_img_btn=std_img_btn.resize((180,180),Image.Resampling.LANCZOS)
+        self.std_img1=ImageTk.PhotoImage(std_img_btn)
 
-        # std_b1 = Button(bg_img,image=self.std_img1,cursor="hand2")
-        # std_b1.place(x=250,y=200,width=180,height=180)
+        std_b1 = Button(bg_img,image=self.std_img1,cursor="hand2")
+        std_b1.place(x=250,y=200,width=180,height=180)
 
-        # std_b1_1 = Button(bg_img,text="Akshta Nalapure",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
-        # std_b1_1.place(x=250,y=380,width=180,height=45)
+        std_b1_1 = Button(bg_img,text="Akshta Nalapure",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
+        std_b1_1.place(x=250,y=380,width=180,height=45)
 
         # Detect Face  button 2
         det_img_btn=Image.open(r"C:\Users\user\Documents\Python_Test_Projects\Images_GUI\m1.png")
