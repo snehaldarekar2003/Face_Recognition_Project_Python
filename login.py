@@ -290,14 +290,14 @@ class Face_Recognition_System:
         tra_b1_1.place(x=250,y=510,width=180,height=45)
 
         # Photo   button 6
-        pho_img_btn=Image.open(r"C:\Users\user\Documents\Python_Test_Projects\Images_GUI\qr1.png")
+        pho_img_btn=Image.open(r"C:\Users\user\Documents\Python_Test_Projects\Images_GUI\f_det.jpg")
         pho_img_btn=pho_img_btn.resize((180,180),Image.Resampling.LANCZOS)
         self.pho_img1=ImageTk.PhotoImage(pho_img_btn)
 
         pho_b1 = Button(bg_img,command=self.open_img,image=self.pho_img1,cursor="hand2",)
         pho_b1.place(x=480,y=330,width=180,height=180)
 
-        pho_b1_1 = Button(bg_img,command=self.open_img,text="QR-Codes",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
+        pho_b1_1 = Button(bg_img,command=self.open_img,text="Photos",cursor="hand2",font=("tahoma",15,"bold"),bg="white",fg="navyblue")
         pho_b1_1.place(x=480,y=510,width=180,height=45)
 
         # Developers   button 7
@@ -357,8 +357,8 @@ class Face_Recognition_System:
     def go_back(self):
         self.root.destroy()  # This will close the current window
     
-    def open_img(self):
-        os.startfile("dataset")
+    # def open_img(self):
+    #     os.startfile("dataset")
     
   
 
